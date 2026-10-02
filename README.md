@@ -78,3 +78,11 @@ class 20 Stylongchia
 	
 
 class 21 Synchaeta
+
+## Dataset
+The project is trained and benchmarked on the **EMDS-6** dataset (840 paired original micrographs and ground-truth masks across 21 classes). 
+
+To retrain the models:
+1. Download the dataset from the official release / publication [1].
+2. Extract `EMDS5-Original` and `EMDS5-Ground Truth` into the project root directory.
+3. Run the training cells in `41.ipynb`.
