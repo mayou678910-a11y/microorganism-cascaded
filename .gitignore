@@ -1,0 +1,8 @@
+﻿best_cls_model.pth
+best_seg_unet.pth
+*.zip
+EMDS5-Original/
+EMDS5-Ground Truth/
+__pycache__/
+*.tmp
+.ipynb_checkpoints/
