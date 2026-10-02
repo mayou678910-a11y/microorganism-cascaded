@@ -1,88 +1,11 @@
-Introduction of Environmental Microorganism Dataset Version 6 (EMDS-6)
-	
+Dataset
+This project is benchmarked on the Environmental Microorganism Dataset Version 6 (EMDS-6), consisting of 21 taxonomic classes with 40 paired brightfield micrographs and binary ground-truth masks per class (840 image-mask pairs total). In the ground-truth masks, the target microorganism is white (255) and the background is black (0).
 
-In EMDS-6, there are 21 classes of environmental microorganisms (EMs).
-In each calss, there are 40 EM original images and their corresponding binary groud truth images. 
-	
-In ground truth images, the foreground is white and background is black.
-	
+Classes (21):
+01 Actinophrys, 02 Arcella, 03 Aspidisca, 04 Codosiga, 05 Colpoda, 06 Epistylis, 07 Euglypha, 08 Paramecium, 09 Rotifera, 10 Vorticella, 11 Noctiluca, 12 Ceratium, 13 Stentor, 14 Siprostomum, 15 Keratella Quadrala, 16 Euglena, 17 Gymnodinium, 18 Gonyaulax, 19 Phacus, 20 Stylongchia, 21 Synchaeta.
 
-First release: 04-12-2021.
-Nearst update: 04-12-2021.
+Preparation for Retraining:
+To retrain the models from scratch, download EMDS5-Original.zip and EMDS5-Ground Truth.zip from this repository's Releases tab and extract them directly into the root directory alongside 41.ipynb (the extracted folders retain their benchmark legacy prefix EMDS5-Original and EMDS5-Ground Truth).
 
-Any questions: Prof. Dr.-Ing. Chen Li, lichen@bmie.neu.edu.cn 
-Related people: Chen Li, Xuemin Zhu, Bolin Lu, Jinghua Zhang, Fangshu Ma, Yanling Zou, Peng Zhao, Pingli Ma, Hao Xu.
-	
-
-EMs:
-	
-
-class 01 Actinophrys
-	
-
-class 02 Arcella
-	
-
-class 03 Aspidisca
-	
-
-class 04 Codosiga
-	
-
-class 05 Colpoda
-	
-
-class 06 Epistylis
-	
-
-class 07 Euglypha
-	
-
-class 08 Paramecium
-	
-
-class 09 Rotifera
-	
-
-class 10 Vorticella
-	
-
-class 11 Noctiluca
-	
-
-class 12 Ceratium
-	
-
-class 13 Stentor
-	
-
-class 14 Siprostomum
-	
-
-class 15 Keratella Quadrala
-	
-
-class 16 Euglena
-	
-
-class 17 Gymnodinium
-	
-
-class 18 Gonyaulax
-	
-
-class 19 Phacus
-	
-
-class 20 Stylongchia
-	
-
-class 21 Synchaeta
-
-## Dataset
-The project is trained and benchmarked on the **EMDS-6** dataset (840 paired original micrographs and ground-truth masks across 21 classes). 
-
-To retrain the models:
-1. Download the dataset from the official release / publication [1].
-2. Extract `EMDS5-Original` and `EMDS5-Ground Truth` into the project root directory.
-3. Run the training cells in `41.ipynb`.
+Acknowledgements:
+Special thanks to Prof. Dr.-Ing. Chen Li and the research team for creating and releasing the EMDS-6 dataset.
